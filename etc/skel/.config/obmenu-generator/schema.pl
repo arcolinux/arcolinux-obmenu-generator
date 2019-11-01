@@ -71,7 +71,7 @@ our $SCHEMA = [
     # Preferences
     {begin_cat => ['Preferences', 'theme']},
 
-        {item => ['nitrogen',                               'Choose wallpaper',         'nitrogen']},
+        {item => ['nitrogen',                               'Nitrogen',         'nitrogen']},
         {item => ["gksudo geany /etc/oblogout.conf",        'Exit Appearance',          'theme']},
         {item => ['gksudo lightdm-gtk-greeter-settings',    'LightDM Appearance',       'theme']},
         {item => ['lxappearance',                           'Lxappearance',             'theme']},
