@@ -30,16 +30,12 @@ my $editor = $CONFIG->{editor};
 our $SCHEMA = [
 	{sep => "ArcoLinux"},
     #          COMMAND                 LABEL                ICON
-    #{item => ['xdg-open .',        'File Manager',      'file-manager']},
-    #{item => ['xterm',             'Terminal',          'terminal']},
-    #{item => ['xdg-open http://',  'Web Browser',       'web-browser']},
     {item => ['exo-open --launch TerminalEmulator',                                 'Terminal',          'terminal']},
     {item => ['exo-open --launch FileManager',                                      'File Manager',      'file-manager']},
     {item => ['exo-open --launch WebBrowser ',                                      'Web Browser',       'webbrowser-app']},
     {item => ['geany',                                                              'Text Editor',       'geany']},
     {sep => undef},
 
-    #{sep => 'Applications'},
     #          NAME            LABEL                ICON
     {cat => ['utility',     'Accessories', 'applications-utilities']},
     {cat => ['development', 'Development', 'applications-development']},
@@ -68,14 +64,12 @@ our $SCHEMA = [
     {sep => undef},
 
     {pipe => ['am-conky-pipemenu',  'Conky',        'conky']},
-    # Preferences
+
     {begin_cat => ['Preferences', 'theme']},
 
         {item => ['nitrogen',                               'Nitrogen',         'nitrogen']},
-        {item => ["gksudo geany /etc/oblogout.conf",        'Exit Appearance',          'theme']},
         {item => ['gksudo lightdm-gtk-greeter-settings',    'LightDM Appearance',       'theme']},
         {item => ['lxappearance',                           'Lxappearance',             'theme']},
-        {item => ["gksudo geany /etc/slim.conf",            'Slim Appearance',          'theme']},
         {item => ['geany ~/.config/termite/config',         'Termite Appearance',       'theme']},
         {item => ['xfce4-appearance-settings',              'Xfce4 Appearance',         'preferences-desktop-theme']},
         {sep => undef},
@@ -85,7 +79,7 @@ our $SCHEMA = [
         {item => ['pavucontrol',                            'Sound Preferences',        'multimedia-volume-control']},
         {item => ['xfce4-settings-manager',                 'Xfce4 Settings Manager',   'preferences-desktop']},
         {sep => undef},
-        # Openbox category
+
         {pipe => ['am-compositor',      'Compositor',      'compton']},
         {begin_cat => ['Openbox', 'openbox']},
             {item => ["$editor ~/.config/openbox/menu.xml",     'Edit menu.xml',                 'text-xml']},
@@ -140,7 +134,7 @@ our $SCHEMA = [
     ## The xscreensaver lock command
     #{item => ['xscreensaver-command -lock', 'Lock', 'system-lock-screen']},
     {sep => undef},
-    {item => ['slimlock',                      'Lock Screen',                       'lock']},
-    {item => ['oblogout',                      'Exit Openbox',                      'exit']},
+    {item => ['arcolinux-logout',              'Lock Screen',                       'lock']},
+    {item => ['arcolinux-logout',              'Exit Openbox',                      'exit']},
 
 ]
