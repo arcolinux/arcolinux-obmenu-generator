@@ -80,7 +80,7 @@ our $SCHEMA = [
         {item => ['xfce4-settings-manager',                 'Xfce4 Settings Manager',   'preferences-desktop']},
         {sep => undef},
 
-        {pipe => ['am-compositor',      'Compositor',      'picom']},
+        {pipe => ['am-compositor',      'Compositor',      'compton']},
         {begin_cat => ['Openbox', 'openbox']},
             {item => ["$editor ~/.config/openbox/menu.xml",     'Edit menu.xml',                 'text-xml']},
             {item => ["$editor ~/.config/openbox/rc.xml",       'Edit rc.xml',                   'text-xml']},
