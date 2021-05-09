@@ -83,6 +83,6 @@ our $CONFIG = {
                            },
   "missing_icon"        => "gtk-missing-image",
   "name_keys"           => ["Name"],
-  "terminal"            => "termite",
+  "terminal"            => "urxvt",
   "VERSION"             => "0.80",
 }
