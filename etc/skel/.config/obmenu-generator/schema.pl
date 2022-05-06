@@ -134,7 +134,7 @@ our $SCHEMA = [
     ## The xscreensaver lock command
     #{item => ['xscreensaver-command -lock', 'Lock', 'system-lock-screen']},
     {sep => undef},
-    {item => ['arcolinux-logout',              'Lock Screen',                       'lock']},
-    {item => ['arcolinux-logout',              'Exit Openbox',                      'exit']},
+    {item => ['archlinux-logout',              'Lock Screen',                       'lock']},
+    {item => ['archlinux-logout',              'Exit Openbox',                      'exit']},
 
 ]
