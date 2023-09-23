@@ -87,8 +87,6 @@ our $SCHEMA = [
             {sep => undef},
             {item => ['obmenu3',                                'GUI Menu Editor',               'theme']},
             {item => ['obconf',                                 'GUI Config Tool',               'theme']},
-            {item => ['obkey',                                  'GUI Keybinds',                  'theme']},
-
             {sep => undef},
             {item => ['openbox --restart',                      'Restart Openbox',               'openbox']},
             {item => ['openbox --reconfigure',                  'Reconfigure Openbox',           'openbox']},
