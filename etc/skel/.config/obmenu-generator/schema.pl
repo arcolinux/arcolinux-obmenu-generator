@@ -30,7 +30,7 @@ my $editor = $CONFIG->{editor};
 our $SCHEMA = [
 	{sep => "ArcoLinux"},
     #          COMMAND                 LABEL                ICON
-    {item => ['exo-open --launch TerminalEmulator',                                 'Terminal',          'terminal']},
+    {item => ['alacritty',                                 'Terminal',          'terminal']},
     {item => ['exo-open --launch FileManager',                                      'File Manager',      'file-manager']},
     {item => ['exo-open --launch WebBrowser ',                                      'Web Browser',       'webbrowser-app']},
     {item => ['geany',                                                              'Text Editor',       'geany']},
@@ -68,7 +68,6 @@ our $SCHEMA = [
     {begin_cat => ['Preferences', 'theme']},
 
         {item => ['nitrogen',                               'Nitrogen',                 'nitrogen']},
-        {item => ['sddm-config-editor',                     'Sddm application',         'theme']},
         {item => ['lxappearance',                           'Lxappearance',             'theme']},
         {item => ['geany ~/.config/termite/config',         'Termite Appearance',       'theme']},
         {item => ['xfce4-appearance-settings',              'Xfce4 Appearance',         'preferences-desktop-theme']},
