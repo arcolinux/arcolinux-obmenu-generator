@@ -69,10 +69,9 @@ our $SCHEMA = [
 
         {item => ['nitrogen',                               'Nitrogen',                 'nitrogen']},
         {item => ['lxappearance',                           'Lxappearance',             'theme']},
-        {item => ['geany ~/.config/termite/config',         'Termite Appearance',       'theme']},
         {item => ['xfce4-appearance-settings',              'Xfce4 Appearance',         'preferences-desktop-theme']},
         {sep => undef},
-        {item => ['gksudo geany /etc/sddm.conf',            'Sddm configuration',       'login']},
+        {item => ['gksudo geany /etc/sddm.conf.d/kde_settings.conf',            'Sddm configuration',       'login']},
         {item => ['xfce4-mime-settings',                    'Preferred Applications',   'preferred-applications']},
         {item => ['system-config-printer',                  'Printing',                 'printer']},
         {item => ['pavucontrol',                            'Sound Preferences',        'multimedia-volume-control']},
@@ -124,9 +123,9 @@ our $SCHEMA = [
     {end_cat => undef},
 
     {sep => undef},
-    {pipe => ['am-need-to-know-pipemenu',      'Need To Know',                      'stock_about']},
-    {sep  => undef},
-    {pipe => ['am-help-pipemenu',              'Help &amp; Resources',              'info']},
+    #{pipe => ['am-need-to-know-pipemenu',      'Need To Know',                      'stock_about']},
+    #{sep  => undef},
+    #{pipe => ['am-help-pipemenu',              'Help &amp; Resources',              'info']},
     {pipe => ['am-kb-pipemenu',                'Display Keybinds',                  'cs-keyboard']},
     ## The xscreensaver lock command
     #{item => ['xscreensaver-command -lock', 'Lock', 'system-lock-screen']},
